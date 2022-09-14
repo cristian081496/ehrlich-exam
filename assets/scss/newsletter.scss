@@ -56,6 +56,10 @@
     .newsletter-form {
       display: block;
       margin: 0 auto;
+      width: 100%;
+      form .email {
+        width: 100%;
+      }
     }
   }
 }
