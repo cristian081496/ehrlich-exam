@@ -135,6 +135,10 @@ header {
             flex: unset;
             margin: 0;
             padding: 0;
+
+            img {
+              max-width: 150px;
+            }
           }
 
           .right-nav {

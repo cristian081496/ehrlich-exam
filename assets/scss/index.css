@@ -213,6 +213,9 @@ header .container nav .right-nav {
     margin: 0;
     padding: 0;
   }
+  header .container nav.mobile .site-brand img {
+    max-width: 150px;
+  }
   header .container nav.mobile .right-nav {
     flex: 1;
   }
