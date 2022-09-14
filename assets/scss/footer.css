@@ -1,0 +1,9 @@
+footer .footer-links .item ul {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-links .item ul li {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=footer.css.map */

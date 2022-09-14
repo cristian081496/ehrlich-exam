@@ -1,0 +1,114 @@
+#new-arrival {
+  height: 500px;
+  background-image: url("../images/new-arrival-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .wrapper {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 47px;
+    color: #fff;
+
+    .content {
+      padding-left: 75px;
+
+      h1 {
+        font-weight: 800;
+        font-size: 86px;
+        line-height: 86px;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        margin-top: 21px;
+      }
+
+      a {
+        padding: 10px 20px;
+        color: #000;
+        background-color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@include responsive($content-width) {
+  #new-arrival {
+    height: 400px;
+  }
+}
+
+
+@include responsive('1262px') {
+  #new-arrival {
+    background-position-x: center;
+  }
+}
+
+@include responsive('1100px') {
+  #new-arrival {
+    background-position-x: center;
+  }
+}
+
+@include responsive('1080px') {
+  #new-arrival {
+    .wrapper {
+      right: 5%;
+    }
+  }
+}
+@include responsive('912px') {
+  #new-arrival {
+    background-position-x: 20%;
+    .container {
+      background: rgb(0 0 0 / 32%);
+    }
+    .wrapper {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 500px;
+
+      .content {
+        padding: 0 30px;
+      }
+
+    }
+  }
+}
+
+
+@include responsive('510px') {
+  #new-arrival {
+
+    background-position-x: 25%;
+    .wrapper .content {
+
+      h1 {
+        font-size: 60px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      a {
+        display: block;
+        margin: 0 auto;
+        max-width: 150px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

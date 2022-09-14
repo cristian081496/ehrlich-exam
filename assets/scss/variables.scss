@@ -1,0 +1,9 @@
+$content-width: '1440px';
+$base-font: 'Montserrat', sans-serif;
+$pre-content-width: '1439px';
+
+@mixin responsive ($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}

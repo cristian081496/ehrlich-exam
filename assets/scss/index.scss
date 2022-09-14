@@ -1,0 +1,79 @@
+@import 'variables';
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body * {
+  font-family: $base-font;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1440px;
+  width: 1440px;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  padding: 0 60px;
+  height: inherit;
+  position: relative;
+
+}
+
+.flex {
+  display: flex;
+
+  &.align-center {
+    align-items: center;
+  }
+
+  &.justify-center {
+    justify-content: center;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+@include responsive($pre-content-width) {
+  .container {
+    width: 100%;
+    padding: 0 30px !important;
+  }
+}
+
+
+@import 'mobile-menu-drawer';
+@import 'nav';
+@import 'benefits';
+@import 'hero';
+@import 'site-wide-deals';
+@import 'vip-exclusive';
+@import 'now-trending';
+@import 'new-arrival';
+@import 'recently-bought';
+@import 'your-next-inspo';
+@import 'newsletter';
+@import 'footer';
+

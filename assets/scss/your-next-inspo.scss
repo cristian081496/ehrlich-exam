@@ -1,0 +1,54 @@
+#your-next-inspo {
+  text-align: center;
+  background-color: #F2F2F2;
+  padding: 50px 0 60px;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .insta-posts {
+    grid-template-columns: repeat(5, 225px);
+    grid-column-gap: 49px;
+    margin-bottom: 31px;
+    margin-top: 51px;
+
+  }
+
+  .btn-view-all-post {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #000000;
+    text-decoration: none;
+  }
+}
+
+@include responsive('1376px') {
+  #your-next-inspo .insta-posts {
+
+    grid-template-columns: repeat(3, 225px);
+    grid-row-gap: 49px;
+    justify-content: center;
+  }
+}
+
+
+@include responsive('845px') {
+  #your-next-inspo .insta-posts {
+    grid-template-columns: repeat(2, 225px);
+  }
+}
+
+@include responsive('550px') {
+  #your-next-inspo .insta-posts {
+    grid-template-columns: repeat(2, calc(50% - 20px));
+    grid-column-gap: 20px;
+  }
+}
