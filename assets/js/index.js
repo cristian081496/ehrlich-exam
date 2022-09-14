@@ -9,7 +9,7 @@ $(document).ready(function () {
     })
 
     // menu drawer
-    const btnOpenDrawer = $("#menu-drawer");
+    const btnOpenDrawer = $("#menu-drawer a");
     const btnCloseDrawer = $("#close-drawer");
     const MenuDrawer = $("#mobile-menu-drawer");
 

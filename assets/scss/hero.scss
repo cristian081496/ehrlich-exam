@@ -156,7 +156,12 @@
           img {
             display: block;
             margin: 0 auto;
-            max-height: calc(100% - 150px);
+            margin-top: 20px;
+            max-height: calc(100% - 170px);
+          }
+          button {
+            font-size: 12px;
+            margin-top: 30px;
           }
         }
 

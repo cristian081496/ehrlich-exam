@@ -85,6 +85,28 @@
         grid-template-columns: repeat(2, calc(50% - 20px));
         grid-column-gap: 20px;
       }
+      #hashtags {
+        //.item {
+        //  margin: 0;
+        //  width: 70%;
+        //}
+      }
+    }
+  }
+}
+
+@include responsive('450px') {
+  #now-trending {
+    .container {
+      #hashtags {
+        display: grid;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr;
+        .item {
+          margin: 0;
+
+        }
+      }
     }
   }
 }
